@@ -37,7 +37,8 @@ git clone https://github.com/patel-aum/SumMate.git
 ## 📽️ Watch the Demo
 Want to see SumMate in action? Check out the video below to get a quick overview of how the extension works!
 
-[SumMate Demo Video]()
+
+[SumMate Demo Video](https://youtu.be/Far9ropMBHU)
 
 
 ---
