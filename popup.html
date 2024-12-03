@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Summary</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Saved Summaries</h1>
+      <div class="header-buttons">
+        <button id="refresh-btn" title="Refresh list">↻</button>
+        <button id="clear-all-btn" title="Clear all">🗑️</button>
+      </div>
+    </div>
+    
+    <div id="summaries-container">
+      <!-- Summaries will be loaded here -->
+      <div class="empty-state" id="empty-state">
+        No summaries saved yet. Visit a YouTube video and use the summary panel to create and save summaries.
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

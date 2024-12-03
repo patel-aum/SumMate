@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "SumMate ",
+  "version": "1.0",
+  "description": "Extract and summarize YouTube video transcripts and lets you summarize using chrome inbuild AI without internet",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "cookies",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["*://*.youtube.com/*"],
+    "js": ["content.js"]
+  }],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "assets/16.png",
+    "48": "assets/48.png",
+    "128": "assets/128.png"
+  }
+}
